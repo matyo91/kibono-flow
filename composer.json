@@ -4,17 +4,17 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "darkwood/flow": "^8.1.1",
+        "php-etl/pipeline": "^0.6.1",
         "symfony/console": "8.1.*",
         "symfony/dotenv": "8.1.*",
-        "symfony/flex": "^2",
+        "symfony/flex": "^2.11",
         "symfony/framework-bundle": "8.1.*",
         "symfony/runtime": "8.1.*",
         "symfony/yaml": "8.1.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -34,6 +34,9 @@
         "psr-4": {
             "App\\Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "blackfire/php-sdk": "^2.6"
     },
     "replace": {
         "symfony/polyfill-ctype": "*",
